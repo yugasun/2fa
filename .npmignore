@@ -1,0 +1,25 @@
+node_modules
+*.map
+tsconfig.tsbuildinfo
+tests
+test
+__tests__
+__test__
+examples
+.github
+.env*
+jest.config.js
+.eslintrc.js
+.eslintignore
+.prettierignore
+prettier.config.js
+release.config.js
+commitlint.config.js
+.editorconfig
+
+# source code
+/src
+!/dist/src
+
+tsconfig.json
+slsplus.yml
