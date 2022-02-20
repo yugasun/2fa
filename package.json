@@ -3,6 +3,9 @@
   "version": "0.0.2",
   "description": "CLI Command for Two Factor Authentication",
   "author": "yugasun",
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "exports": "./dist/src/index.js",
   "bin": {
@@ -77,8 +80,8 @@
     ]
   },
   "keywords": [
-    "ga",
-    "Google Authentication",
+    "2fa",
+    "Two Factor Authentication",
     "CLI"
   ]
 }
