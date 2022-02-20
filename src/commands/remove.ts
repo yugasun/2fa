@@ -24,7 +24,7 @@ export async function action(): Promise<void> {
 
 const cmd = new Command('remove');
 
-cmd.description('Remove platform ga key').action(() => {
+cmd.description('Remove platform 2fa key').action(() => {
   action();
 });
 

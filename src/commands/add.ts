@@ -19,7 +19,7 @@ const questions = [
         return true;
       }
 
-      return 'Please enter a valid GA Key.';
+      return 'Please enter a valid 2fa Key.';
     },
   },
 ];
@@ -34,7 +34,7 @@ export async function action(): Promise<void> {
 
 const cmd = new Command('add');
 
-cmd.description('Add platform ga key').action(() => {
+cmd.description('Add platform 2fa key').action(() => {
   action();
 });
 

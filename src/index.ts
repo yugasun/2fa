@@ -9,7 +9,7 @@ async function run() {
   const pkg = await import('../package.json');
   program.storeOptionsAsProperties(false);
   program
-    .name('yga')
+    .name('2fa')
     .version(
       `Google Authentiction CLI Version: ${pkg.version}`,
       '-v, --version',
@@ -25,7 +25,7 @@ async function run() {
   program.on('--help', () => {
     console.log('');
     console.log('Example call:');
-    console.log('  $ yga --help');
+    console.log('  $ 2fa --help');
   });
 
   // set default command to generate

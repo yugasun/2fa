@@ -6,7 +6,7 @@ import clipboard from 'clipboardy';
 import AddCommand from './add';
 import { StorageEngine } from '../storage';
 
-export class Ga {
+export class TwoFa {
   engine: StorageEngine;
 
   constructor() {
@@ -43,18 +43,18 @@ export class Ga {
     const secret = this.engine.get(name) as string;
 
     const code = authenticator.generate(secret);
-    console.log(`Generate ga code for ${name}: `);
+    console.log(`Generate 2fa code for plarform '${name}': `);
     console.log(chalk.bgGreen(` ${chalk.black(code)} `));
     clipboard.write(code).then(() => {
-      console.log(chalk.gray('Auto copy ga code to clipboard success.'));
+      console.log(chalk.gray('Auto copy 2fa code to clipboard success.'));
     });
   }
 }
 
 const generate = new Command('generate');
-generate.description('Generate ga code.').action(async () => {
-  const ga = new Ga();
-  ga.generate();
+generate.description('Generate 2fa code.').action(async () => {
+  const twoFa = new TwoFa();
+  twoFa.generate();
 });
 
 // sub command need export default

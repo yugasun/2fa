@@ -1,16 +1,16 @@
 {
-  "name": "yga",
-  "version": "0.0.1",
-  "description": "Google Authenticator",
+  "name": "@ygkit/2fa",
+  "version": "0.0.2",
+  "description": "CLI Command for Two Factor Authentication",
   "author": "yugasun",
   "license": "MIT",
   "exports": "./dist/src/index.js",
   "bin": {
-    "yga": "bin/yga.js"
+    "2fa": "bin/2fa.js"
   },
   "scripts": {
     "dev": "ts-node ./src/index.ts",
-    "start": "node ./bin/yga.js",
+    "start": "node ./bin/2fa.js",
     "test": "jest",
     "build": "tsc",
     "format": "npm run lint && npm run prettier",

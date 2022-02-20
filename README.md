@@ -1,11 +1,11 @@
-# Google Authenticator
+# Two Factor Authentication
 
-[![npm](https://img.shields.io/npm/v/yga)](http://www.npmtrends.com/yga)
-[![NPM downloads](http://img.shields.io/npm/dm/yga.svg?style=flat-square)](http://www.npmtrends.com/yga)
+[![npm](https://img.shields.io/npm/v/2fa)](http://www.npmtrends.com/2fa)
+[![NPM downloads](http://img.shields.io/npm/dm/2fa.svg?style=flat-square)](http://www.npmtrends.com/2fa)
 
-Google Authenticator CLI Command.
+CLI Command for Two Factor Authentication.
 
-- [Google Authenticator](#google-authenticator)
+- [Two Factor Authentication](#two-factor-authentication)
   - [Installation](#installation)
   - [Usage](#usage)
     - [Add Platform](#add-platform)
@@ -16,35 +16,35 @@ Google Authenticator CLI Command.
 ## Installation
 
 ```bash
-$ npm i yga -g
+$ npm i @ygkit/2fa -g
 ```
 
 ## Usage
 
 ```bash
-Usage: yga [options] [command]
+Usage: 2fa [options] [command]
 
 Options:
   -v, --version   output the current version
   -h, --help      display help for command
 
 Commands:
-  add             Add platform ga key
-  generate        Generate ga code.
+  add             Add platform 2fa key
+  generate        Generate 2fa code.
   list            List all platform
   remove          Remove platform ga key
   help [command]  display help for command
 
 Example call:
-  $ yga --help
+  $ 2fa --help
 ```
 
 ### Add Platform
 
 ```bash
-$ yga add
+$ 2fa add
 ? Please input platform name: test1
-? Please input goole authentication key: **********
+? Please input 2fa authentication key: **********
  SUCCESS  Add platform test1 success.
 ✨  Done in 33.32s.
 ```
@@ -52,7 +52,7 @@ $ yga add
 ### Remove Platform
 
 ```bash
-$ yga remove
+$ 2fa remove
 ? Please select platform name to remove: test1
  SUCCESS  Remove platform 'test1' success.
 ```
@@ -62,17 +62,17 @@ $ yga remove
 Help:
 
 ```bash
-$ yga generate
+$ 2fa generate
 ? Please select platform name: npm
-Generate ga code for npm:
+Generate 2fa code for npm:
  928576
-Auto copy ga code to clipboard success.
+Auto copy 2fa code to clipboard success.
 ```
 
 Also you can omit `generate` word, like:
 
 ```bash
-$ yga
+$ 2fa
 ```
 
 ## License
