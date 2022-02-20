@@ -1,7 +1,7 @@
 # Two Factor Authentication
 
-[![npm](https://img.shields.io/npm/v/2fa)](http://www.npmtrends.com/2fa)
-[![NPM downloads](http://img.shields.io/npm/dm/2fa.svg?style=flat-square)](http://www.npmtrends.com/2fa)
+[![npm](https://img.shields.io/npm/v/%40ygkit%2F2fa)](http://www.npmtrends.com/%40ygkit%2F2fa)
+[![NPM downloads](http://img.shields.io/npm/dm/%40ygkit%2F2fa.svg?style=flat-square)](http://www.npmtrends.com/%40ygkit%2F2fa)
 
 CLI Command for Two Factor Authentication.
 
