@@ -1,10 +1,13 @@
 import chalk from 'chalk';
 import { Command } from 'commander';
-import { prompt } from 'inquirer';
+import { prompt, registerPrompt } from 'inquirer';
 import { authenticator } from 'otplib';
 import clipboard from 'clipboardy';
 import AddCommand from './add';
 import { StorageEngine } from '../storage';
+
+// eslint-disable-next-line
+registerPrompt('search-list', require('inquirer-search-list'));
 
 export class TwoFa {
   engine: StorageEngine;
@@ -34,7 +37,7 @@ export class TwoFa {
     }
     const { name } = await prompt([
       {
-        type: 'list',
+        type: 'search-list',
         name: 'name',
         message: 'Please select platform name:',
         choices: keys,
