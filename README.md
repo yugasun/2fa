@@ -6,12 +6,17 @@
 CLI Command for Two Factor Authentication.
 
 - [Two Factor Authentication](#two-factor-authentication)
+  - [Demo](#demo)
   - [Installation](#installation)
   - [Usage](#usage)
     - [Add Platform](#add-platform)
     - [Remove Platform](#remove-platform)
     - [Generate](#generate)
   - [License](#license)
+
+## Demo
+
+![Demo](images/demo.gif)
 
 ## Installation
 
