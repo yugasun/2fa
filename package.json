@@ -1,6 +1,6 @@
 {
   "name": "@ygkit/2fa",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "CLI Command for Two Factor Authentication",
   "author": "yugasun",
   "publishConfig": {
