@@ -48,9 +48,13 @@ export class TwoFa {
     const code = authenticator.generate(secret);
     console.log(`Generate 2fa code for plarform '${name}': `);
     console.log(chalk.bgGreen(` ${chalk.black(code)} `));
-    clipboard.write(code).then(() => {
+
+    try {
+      await clipboard.write(code);
       console.log(chalk.gray('Auto copy 2fa code to clipboard success.'));
-    });
+    } catch (e) {
+      console.warn(chalk.yellow('Can not copy 2fa code to clipboard, please copy it manually.'));
+    }
   }
 }
 
